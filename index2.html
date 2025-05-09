@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhosale Agro Business | Coming Soon</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Source+Sans+3:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(135deg, #d0f0c0 0%, #fef9e7 100%);
+            margin: 0;
+            font-family: 'Source Sans 3', Arial, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+        .coming-soon-container {
+            background: #fff;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+            border-radius: 24px;
+            padding: 50px 40px;
+            text-align: center;
+            max-width: 400px;
+            width: 90%;
+            animation: fadeIn 1s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .logo {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 24px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            object-fit: cover;
+        }
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.2rem;
+            color: #2e7d32;
+            margin-bottom: 16px;
+        }
+        .subtitle {
+            color: #555;
+            font-size: 1.05rem;
+            margin-bottom: 32px;
+            line-height: 1.5;
+        }
+        .footer {
+            margin-top: 32px;
+            color: #999;
+            font-size: 0.9rem;
+        }
+        .highlight {
+            color: #2e7d32;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+    <div class="coming-soon-container">
+        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logo.jpg-s3vznXlNTuv7RQt9t35W6Awo5wDvRA.jpeg" alt="Bhosale Agro Logo" class="logo">
+        <h1>We Are Coming Soon</h1>
+        <div class="subtitle">
+            Bhosale Agro Business is preparing a <span class="highlight">fresh new experience</span> for you.<br>Stay tuned for something amazing<span class="dots">...</span>
+        </div>
+        <div class="footer">&copy; 2025 Bhosale Agro Business</div>
+    </div>
+    <script>
+        // Animate subtitle dots
+        const dotsEl = document.querySelector('.dots');
+        let dots = 0;
+        setInterval(() => {
+            dots = (dots + 1) % 4;
+            dotsEl.textContent = '.'.repeat(dots);
+        }, 700);
+    </script>
+</body>
+</html>
